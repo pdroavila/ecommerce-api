@@ -1,11 +1,10 @@
 const mysql = require('mysql');
 const connection = require('../config/mysqlConnection');
 const jwt = require('jsonwebtoken');
-const secretKey = "senhaSuperSecreta";
 const crypto = require('crypto');
 
 function generateAccessToken(user) {
-  return jwt.sign(user, secretKey); // Token sem expiração
+  return jwt.sign(user, process.env.DECRYPT_HASH); // Token sem expiração
 }
 
 function verifyAccessToken(token) {

@@ -1,11 +1,10 @@
 const connection = require('../config/mysqlConnection');
 const jwt = require('jsonwebtoken');
-const secretKey = "senhaSuperSecreta";
 const crypto = require('crypto');
 
 function verifyAccessToken(token) {
   try {
-    const decoded = jwt.verify(token, secretKey);
+    const decoded = jwt.verify(token, process.env.DECRYPT_HASH);
     return decoded; 
   } catch (error) {
     console.error('Erro ao verificar token:', error);
