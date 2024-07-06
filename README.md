@@ -12,15 +12,15 @@ Projeto de API backend desenvolvido para complementar o projeto da disciplina de
    mv env .env
 
 2. **Configurar Banco de Dados**
-   
-  Ajuste as configurações do banco de dados no arquivo .env conforme necessário. Certifique-se de preencher os seguintes campos com os valores apropriados para o seu banco de dados:
 
-  ```bash
-  DB_HOST=your_database_host
-  DB_USER=your_database_user
-  DB_PASSWORD=your_database_password
-  DB_NAME=your_database_name
-  ```
+   Ajuste as configurações do banco de dados no arquivo .env conforme necessário. Certifique-se de preencher os seguintes campos com os valores apropriados para o seu banco de dados:
+
+   ```bash
+   DB_HOST=your_database_host
+   DB_USER=your_database_user
+   DB_PASSWORD=your_database_password
+   DB_NAME=your_database_name
+   ```
 
 3. **Rode o script SQL**
 
@@ -29,5 +29,5 @@ Projeto de API backend desenvolvido para complementar o projeto da disciplina de
 4. **Executar Servidor API**
 
    Após configurar o banco de dados e as variáveis de ambiente, você pode executar o servidor API utilizando o Node.js:
-  ```bash
+   ```bash
      node app.js
