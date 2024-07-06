@@ -1,4 +1,4 @@
--- Certifique-se de criar a database "ecommerce";
+CREATE DATABASE IF NOT EXISTS ecommerce;
 
 create table produtos
 (
