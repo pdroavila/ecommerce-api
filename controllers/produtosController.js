@@ -24,7 +24,7 @@ const produtosController = {
       }
       
       results.map((result) => {
-        result.imagem = `http://${process.env.BASE_URL}/api/produtos/storage/${result.id}`;
+        result.imagem = `${process.env.BASE_URL}/api/produtos/storage/${result.id}`;
       })
 
       res.json(results);
@@ -45,7 +45,7 @@ const produtosController = {
       }
 
       results.map((result) => {
-        result.imagem = `http://${process.env.BASE_URL}/api/produtos/storage/${result.id}`;
+        result.imagem = `${process.env.BASE_URL}/api/produtos/storage/${result.id}`;
       })
       
       res.json(results[0]);

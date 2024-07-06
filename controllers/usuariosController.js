@@ -9,7 +9,7 @@ function generateAccessToken(user) {
 
 function verifyAccessToken(token) {
   try {
-    const decoded = jwt.verify(token, secretKey);
+    const decoded = jwt.verify(token, process.env.DECRYPT_HASH);
     return decoded; 
   } catch (error) {
     console.error('Erro ao verificar token:', error);

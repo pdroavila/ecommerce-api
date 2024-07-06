@@ -1,0 +1,12 @@
+# Variáveis para Decrypt
+DECRYPT_HASH="senhaSuperSecreta"
+
+# Variáveis para URLs
+BASE_URL="http://localhost:3000"  # ou a URL do seu ambiente
+
+# Variáveis para Banco de Dados
+DATABASE_URL="localhost"
+DATABASE_PORT="3306"  # porta padrão para PostgreSQL, ajuste conforme necessário
+DATABASE_USER="ecommerce"  # usuário do banco de dados
+DATABASE_PASSWORD="123"  # senha do banco de dados
+DATABASE_NAME="ecommerce"  # nome do banco de dados
