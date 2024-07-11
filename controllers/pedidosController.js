@@ -27,6 +27,11 @@ const pedidosController = {
         return;
       }
     
+      if(!results.length){
+        res.status(403).json({error: "Token não localizado."})
+        return;
+      }
+
       const userId = results[0].id;
 
       connection.query('SELECT * FROM pedidos where id_usuario = ?', [userId] ,(err, results) => {

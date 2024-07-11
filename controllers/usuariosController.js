@@ -2,6 +2,7 @@ const mysql = require('mysql');
 const connection = require('../config/mysqlConnection');
 const jwt = require('jsonwebtoken');
 const crypto = require('crypto');
+const { Console } = require('console');
 
 function generateAccessToken(user) {
   return jwt.sign(user, process.env.DECRYPT_HASH); // Token sem expiração
@@ -130,7 +131,8 @@ const usuariosController = {
         res.status(404).json({ error: 'Usuário não encontrado' });
         return;
       }
-      res.status(204).send();
+      res.status(200).json({ message: 'Usuário desativado com sucesso' });
+      return;
     });
   },
 
