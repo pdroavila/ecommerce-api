@@ -37,5 +37,3 @@ create table pedidos
 
 -- Insert's sugeridos:
 INSERT INTO usuarios (nome, email, senha, admin, hash) VALUES ('Admin', 'teste@gmail.com', 'aa1bf4646de67fd9086cf6c79007026c', 1, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lU3RhbXAiOjE3MTQ1ODY4NDMzMDYsImVtYWlsIjoidGVzdGVAZ21haWwuY29tIiwic2VuaGEiOiJ0ZXN0ZTEyMyIsImFkbWluIjp0cnVlLCJpYXQiOjE3MTQ1ODY4NDN9.Jmojd-wBWjHC8KmcRsWAffHbWh4smn2YXEqX-mNGNCc');
-
-INSERT INTO usuarios (nome, email, senha, admin, hash) VALUES ('Usuario', 'usuario@gmail.com', 'aa1bf4646de67fd9086cf6c79007026c', 0, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lU3RhbXAiOjE3MTQ1ODY4NDMzMDYsImVtYWlsIjoidGVzdGVAZ21haWwuY29tIiwic2VuaGEiOiJ0ZXN0ZTEyMyIsImFkbWluIjp0cnVlLCJpYXQiOjE3MTQ1ODY4NDN9.Jmojd-wBWjHC8KmcRsWAffHbWh4smn2YXEqX-mNGNCc');

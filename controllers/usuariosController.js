@@ -60,11 +60,11 @@ const usuariosController = {
   },
 
   registrarUsuario: (req, res) => {
-    const { nome, email, senha } = req.body;
+    const { nome, email, senha, admin = false } = req.body;
 
     connection.query('SELECT email FROM usuarios where email = ?', [email], (err, result) => {
       if(err){
-        res.status(500).json({ error: 'Erro interno do servidor', "teste": err });
+        res.status(500).json({ error: 'Erro interno do servidor', "error": err });
         return;
       }
 
@@ -74,7 +74,7 @@ const usuariosController = {
       }
 
       const timeStamp = new Date().getTime();
-      const hash = generateAccessToken({timeStamp, email, senha, "admin": true });
+      const hash = generateAccessToken({timeStamp, email, senha, admin });
   
       connection.query('INSERT INTO usuarios (nome, email, senha, hash) VALUES (?, ?, ?, ?)', [nome, email, crypto.createHash('md5').update(senha).digest('hex'), hash], (err, result) => {
         if (err) {
