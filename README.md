@@ -25,8 +25,9 @@ Projeto de API backend desenvolvido para complementar o projeto da disciplina de
 3. **Rode o script SQL**
 
    Rode o script presente no arquivo "dump.sql".
+   Por padrão, será criado um usuário com e-mail `teste@gmail.com` e senha `teste123`.
 
-4. **Executar Servidor API**
+5. **Executar Servidor API**
 
    Após configurar o banco de dados e as variáveis de ambiente, você pode executar o servidor API utilizando o Node.js:
    ```bash
